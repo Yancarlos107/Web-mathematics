@@ -21,8 +21,8 @@ const areaTriangulo = (lado1, lado2, base) => {
         altura = Math.sqrt((lado1**2) - ((base / 2)** 2) )
         return ((base * altura) / 2) 
     } else {
-        const semiperimetro = ((lado1 + lado2 + base) / 2)
-        return Math.sqrt(semiperimetro * (semiperimetro - lado1) * (semiperimetro - lado2) * (semiperimetro - base))
+        const semiperimetro = (((Number(lado1) + (Number(lado2))) + (Number(base))) / 2)
+    return Math.sqrt(semiperimetro * (semiperimetro - lado1) * (semiperimetro - lado2) * (semiperimetro - base))
     }
 }
 
@@ -80,9 +80,20 @@ const calcularAreaTriangulo = () => {
     const input3 = document.getElementById("InputTriangulo3")
     const value1 = input1.value
     const value2 = input2.value
-    debugger
     const value3 = input3.value
-    console.log(value1, value2, value3)
-    const area = areaTriangulo(value1, value2, value3)
-    alert(area)
+
+    const areaTriangule = areaTriangulo(value1, value2, value3)
+    alert (areaTriangule) 
+}
+
+const calcularDiametroCirculo = () => {
+
+}
+
+const calcularDiametroCirculo = () => {
+    
+}
+
+const calcularDiametroCirculo = () => {
+    
 }
