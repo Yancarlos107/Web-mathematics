@@ -7,12 +7,28 @@
     <title>Math Calculator</title>
 </head>
 <body>
-    <h1>
-        Figuras Geometrias
-    </h1>
+    <header>
+        <h1>Figuras Geometricas</h1>
+        <p>Primer taller practico de Javascript</p>
+    </header>
+    <section>
+        <h2>Calcula el area y perimetro de un cuadro</h2>
+
+        <form action="">
+            <label for="InputCuadrado">
+                Escribe cuanto mide los lados del cuadrado
+            </label>
+            <input id="InputCuadrado" type="number" />
+            <button type="button" onclick="calcularPerimetroCuadrado();">
+                Calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado();">
+                calcular el area
+            </button>
+        </form>
+    </section>
 
 
-    
     <script src="./index.js"></script>
 </body>
 </html>
