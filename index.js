@@ -87,13 +87,25 @@ const calcularAreaTriangulo = () => {
 }
 
 const calcularDiametroCirculo = () => {
+    const input = document.getElementById("InputCirculo")
+    const value = input.value
 
+    const diametro = diametroCirculo(value)
+    alert (diametro)
 }
 
-const calcularDiametroCirculo = () => {
-    
+const calcularCircunferenciaCirculo = () => {
+    const input = document.getElementById("InputCirculo")
+    const value = input.value
+
+    const circunferencia = circuferenciaCirculo(value)
+    alert(circunferencia)
 }
 
-const calcularDiametroCirculo = () => {
-    
+const calcularAreaCirculo = () => {
+    const input = document.getElementById("InputCirculo")
+    const value = input.value
+
+    const area = areaCirculo(value)
+    alert(area)
 }
