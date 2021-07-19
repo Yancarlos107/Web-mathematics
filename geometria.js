@@ -33,14 +33,13 @@ function esPar (numero) {
 const calcularMediana = (listaMediana) => {
     /* el metodo .sort es usado para organizar los elementos de un array o un objeto */
     listaMediana.sort(comparar);
-    console.log (listaMediana)
     const mitadListaMediana = parseInt(listaMediana.length / 2);
     let mediana;
     if (esPar(listaMediana.length)) {
         const elemento1 = listaMediana[mitadListaMediana - 1];
         const elemento2 = listaMediana[mitadListaMediana];
-        const promedio = calcularPromedioList([elemento1, elemento2])
-        return mediana = promedio;
+        const mediana = calcularPromedioList([elemento1, elemento2])
+        return mediana;
     
     } else {
         return mediana =listaMediana[mitadListaMediana]
