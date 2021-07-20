@@ -18,11 +18,13 @@
         </p>
     </header>
     <div class="main_section_buttons">
-        <button class="button_geometry">Geometry</button>
-        <button class="button_discount">Discount</button>
-        <button class="button_salary">Salary</button>
-        <button class="button_commingsoon">Comming Soon</button>
+        <p>¿Que quieres calcular hoy?</p>
+        <button class="button_geometry" id="btn_geometry" onclick="showAndHide()">Geometry</button>
+        <button class="button_discount" id="btn_discount" onclick="showAndHide()">Discount</button>
+        <button class="button_salary" id="btn_salary" onclick="showAndHide()">Salary</button>
+        <button class="button_commingsoon" id="btn_comingsoon" onclick="showAndHide()">Comming Soon</button>
     </div>
+    <div id="geometry">
     <section>
         <h2>Calcula el area y perimetro de un cuadro</h2>
 
@@ -79,7 +81,9 @@
             </button>
         </form>
     </section>
+    </div>
 
-    <script src="./index.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./jquery-3.6.0.js"></script>
 </body>
 </html>

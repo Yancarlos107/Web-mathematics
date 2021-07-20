@@ -5,6 +5,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: #fdfcfc;
 }
 
 header {
@@ -35,36 +36,68 @@ header p {
 }
 
 .main_section_buttons {
-    margin: 40px auto 40px auto;
+    font-family: 'Acme', sans-serif;
+    margin: 0 auto 0 auto;
     min-width: 360px;
     max-width: 70vh;
-    height: 200px;
-    background-color: red;
-    display: flex-row;
-    justify-content: center;
+    height: 85vh;
+    background-color:#fdfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
+.main_section_buttons p {
+    margin-top: 30px;
+    width:100%;
+    height:20px;
+    text-align: center;
+    color: #2955FF;
+    margin-bottom: 40px;
+    font-size: 20px
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), -3px -4px 4px rgb(173 173 173 / 25%);
+    background-color: #DEDEDE;
+}
+
 .button_geometry {
-    
-    width: 100px;
+    margin: auto;
+    width: 150px;
     height: 40px;
+    border-radius:5px;
+    border: none;
 }
 
 .button_discount {
-    
-    width: 100px;
+    margin: auto;
+    width: 150px;
     height: 40px;
+    border-radius:5px;
+    border: none;
 }
 
 .button_salary {
-    
-    width: 100px;
+    margin: auto;
+    width: 150px;
     height: 40px;
+    border-radius:5px;
+    border: none;
 }
 
+
 .button_commingsoon {
-    
-    width: 100px;
+    margin: auto;
+    width: 150px;
     height: 40px;
+    border-radius:5px;
+    border: none;
+}
+
+#geometry {
+    display: none;
+    background-color: red;
 }

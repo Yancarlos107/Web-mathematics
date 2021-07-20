@@ -1,3 +1,11 @@
+ const showAndHide = () => {
+    $('.main_section_buttons').slideUp(2000);
+    $('#geometry').slideDown(2000);
+    
+}
+
+
+
 /* Codigo del cuadrado */
 const perimetroCuadrado = (lado) => {
     return lado * 4;
