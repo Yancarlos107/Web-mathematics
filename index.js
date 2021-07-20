@@ -1,10 +1,19 @@
- const showAndHide = () => {
+const showAndHide1 = () => {
+        $('.main_section_buttons').slideUp(2000);
+        $('#geometry').slideDown(2000);
+}
+const showAndHide2 = () => {
     $('.main_section_buttons').slideUp(2000);
     $('#geometry').slideDown(2000);
-    
 }
-
-
+const showAndHide3 = () => {
+    $('.main_section_buttons').slideUp(2000);
+    $('#geometry').slideDown(2000);
+}
+const showAndHide4 = () => {
+    $('.main_section_buttons').slideUp(2000);
+    $('#geometry').slideDown(2000);
+}
 
 /* Codigo del cuadrado */
 const perimetroCuadrado = (lado) => {
