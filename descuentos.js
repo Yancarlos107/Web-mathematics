@@ -1,3 +1,8 @@
+const showAndHide2 = () => {
+    $('.main_section_buttons').slideUp(2000);
+    $('#discount').slideDown(2000);
+}
+
 const calcularPrecioConDescuento = (precio, descuento) => {
     const porcentajePrecioConDescuento = 100 - descuento;
     const precioconConDescuento = ((precio * porcentajePrecioConDescuento) / 100);
