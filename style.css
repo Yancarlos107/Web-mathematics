@@ -67,35 +67,7 @@ button:hover {
     background-color: #DEDEDE;
 }
 
-.button_geometry {
-    margin: auto;
-    width: 150px;
-    height: 40px;
-    border-radius:5px;
-    border: none;
-    color: #2955FF;
-}
-
-.button_discount {
-    margin: auto;
-    width: 150px;
-    height: 40px;
-    border-radius:5px;
-    border: none;
-    color: #2955FF;
-}
-
-.button_salary {
-    margin: auto;
-    width: 150px;
-    height: 40px;
-    border-radius:5px;
-    border: none;
-    color: #2955FF;
-}
-
-
-.button_commingsoon {
+button {
     margin: auto;
     width: 150px;
     height: 40px;
@@ -110,9 +82,11 @@ button:hover {
 }
 
 #geometry section {
+    border: 1px solid #1B48BF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), -3px -4px 4px rgb(173 173 173 / 25%);
     border-radius: 10px;
-    margin: auto;
-    background-color: red;
+    margin: auto 4px;
+    background-color: #fdfcfc;
     height: auto;
     text-align: center;
 }
