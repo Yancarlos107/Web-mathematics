@@ -7,15 +7,14 @@
     <title>Math Calculator</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href="index.html" id="header_image_logo"></a>
         <h1>Web Math</h1>
-        <p>La calculadora diseñada para ayudarte en todo lo que necesites
-        </p>
+        <p>La calculadora diseñada para ayudarte en todo lo que necesites</p>
     </header>
     <div class="main_section_buttons">
         <p>¿Que quieres calcular hoy?</p>
@@ -28,70 +27,49 @@
         <section>   
         <h2>Calcula el area y perimetro de un cuadro</h2>
         <form action="">
-            <label for="InputCuadrado">
-                Escribe cuanto mide los lados del cuadrado
-            </label>
+            <label for="InputCuadrado">Escribe cuanto mide los lados del cuadrado</label>
             <input id="InputCuadrado" type="number" placeholder="Valor"/>
-
-            <button type="button" onclick="calcularPerimetroCuadrado();">
-                Calcular el périmetro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado();">
-                Calcular el área
-            </button>
+            <button type="button" onclick="calcularPerimetroCuadrado();">Calcular el périmetro</button>
+            <button type="button" onclick="calcularAreaCuadrado();">Calcular el área</button>
+            <p id="resultCube"></p>
         </form>
         <h2>Calcula el area y perimetro de un triangulo</h2>
         <form action="">
-            <label for="InputTriangulo1">
-                Escribe cuanto mide los lados del cuadrado
-            </label>
+            <label for="InputTriangulo1">Escribe cuanto mide los lados del cuadrado</label>
             <input id="InputTriangulo1" type="number" placeholder="Lado 1" />
             <input id="InputTriangulo2" type="number" placeholder="Lado 2" />
             <input id="InputTriangulo3" type="number" placeholder="Base"/>
-
-            <button type="button" onclick="calcularPerimetroTriangulo();">
-                Calcular el perimetro
-            </button>
-            <button type="button" onclick="calcularAreaTriangulo();">
-                calcular el area
-            </button>
+            <button type="button" onclick="calcularPerimetroTriangulo();">Calcular el perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo();">calcular el area</button>
+            <p id="resultTriangule"></p>
         </form>
         <h2>Calcula el diametro, circunferencia y area de un circulo</h2>
         <form action="">
-            <label for="InputTriangulo1">
-                Escribe cuanto mide el radio
-            </label>
+            <label for="InputTriangulo1">Escribe cuanto mide el radio</label>
             <input id="InputCirculo" type="number" placeholder="Radio" />
-
-            <button type="button" onclick="calcularDiametroCirculo();">
-                Calcular el diametro
-            </button>
-            <button type="button" onclick="calcularCircunferenciaCirculo();">
-                Calcular la circunferencia
-            </button>
-            <button type="button" onclick="calcularAreaCirculo();">
-                calcular el area
-            </button>
+            <button type="button" onclick="calcularDiametroCirculo();">Calcular el diametro</button>
+            <button type="button" onclick="calcularCircunferenciaCirculo();">Calcular la circunferencia</button>
+            <button type="button" onclick="calcularAreaCirculo();">calcular el area</button>
+            <p id="resultCircle"></p>
         </form>
     </section>
     </div>
     <div id="discount">
         <section>
-            <h2>
-                Calculadora productos con descuentos
-            </h2>
+            <h2>Calculadora productos con descuentos</h2>
             <form action="">
                 <label for="Inputprice">Escribe el precio de tu producto</label>
                 <input type="number" id="Inputprice"/>
                 <label for="InputDiscount">Escribe el porcento de descuento de tu producto</label>
                 <input type="number" id="InputDiscount"/>
-                <button type="button" onclick="buttonPriceDiscount()">
-                    Calcular el precio con descuento
-                </button>
+                <button type="button" onclick="buttonPriceDiscount()">Calcular el precio con descuento</button>
                 <!-- con el id mas la propiedad .innerText puedo insertar texto de Js -->
                 <p id="resultPrice"></p>
             </form>
         </section>
+    </div>
+    <div id="salary">
+        <h2>Estoy trabajando en esta funcionalidad, estara disponible dentro de poco.</h2>
     </div>
 <script type="text/javascript" src="./jquery-3.6.0.js"></script>
 <script type="text/javascript" src="./index.js"></script>
