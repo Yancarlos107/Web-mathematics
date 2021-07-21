@@ -114,6 +114,7 @@ button {
 #discount {
     display: none;
     background-color:#fdfcfc;
+    height:80vh;
 }
 
 #resultCube {
@@ -204,4 +205,9 @@ footer {
         margin:auto;
         width: 70vw;
     }
+    #discount section {
+        margin:auto;
+        width: 70vw;
+    }
+    
 }
