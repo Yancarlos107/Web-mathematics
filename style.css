@@ -42,7 +42,7 @@ header p {
     margin: 0 auto 0 auto;
     min-width: 360px;
     max-width: 70vh;
-    height: 85vh;
+    height: 80vh;
     background-color:#fdfcfc;
     display: flex;
     flex-direction: column;
@@ -171,4 +171,37 @@ button {
     background-color:#fdfcfc;
     text-align:center;
     margin: 20% 40px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_icon_github{
+    background-image: url("./resources/github.svg");
+    background-size: contain;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    float:right;
+}
+
+.footer_icon_linkedin {
+    background-image: url("./resources/linkedin.svg");
+    background-size: contain;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    float:right;
+}
+
+
+@media (min-width: 768px) {
+    #geometry section {
+        margin:auto;
+        width: 70vw;
+    }
 }
