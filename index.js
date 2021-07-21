@@ -1,10 +1,11 @@
- const showAndHide = () => {
-    $('.main_section_buttons').slideUp(2000);
-    $('#geometry').slideDown(2000);
-    
+const showAndHide1 = () => {
+        $('.main_section_buttons').slideUp(2000);
+        $('#geometry').slideDown(2000);
 }
-
-
+const showAndHide3 = () => {
+    $('.main_section_buttons').slideUp(2000);
+    $('#salary').slideDown(2000);
+}
 
 /* Codigo del cuadrado */
 const perimetroCuadrado = (lado) => {
@@ -33,8 +34,6 @@ const areaTriangulo = (lado1, lado2, base) => {
     return Math.sqrt(semiperimetro * (semiperimetro - lado1) * (semiperimetro - lado2) * (semiperimetro - base))
     }
 }
-
-console.groupEnd("Triangulos")
 /* Codigo del triangulo */
 
 /* Codigo del circulo */
@@ -61,7 +60,8 @@ const calcularPerimetroCuadrado = () => {
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-     alert(perimetro)
+    const resultPrice = document.getElementById("resultCube");
+    resultPrice.innerText = `El perimetro del cuadrado es: ${perimetro} cm`
 }
 
 const calcularAreaCuadrado = () => {
@@ -69,7 +69,8 @@ const calcularAreaCuadrado = () => {
     const value = input.value;
 
     const area = areaCuadrado(value);
-     alert(area)
+    const resultPrice = document.getElementById("resultCube");
+    resultPrice.innerText = `El area del cuadrado es: ${area} cm2`
 }
 
 const calcularPerimetroTriangulo = () => {
@@ -79,7 +80,8 @@ const calcularPerimetroTriangulo = () => {
     const values = [input1.value, input2.value, input3.value]
 
     const perimetro = perimetroTriangulo(values[0], values[1], values[2])
-    alert(perimetro)
+    const resultPrice = document.getElementById("resultTriangule");
+    resultPrice.innerText = `El perimetro del trinagulo es: ${perimetro} cm`
 }
 
 const calcularAreaTriangulo = () => {
@@ -89,31 +91,31 @@ const calcularAreaTriangulo = () => {
     const value1 = input1.value
     const value2 = input2.value
     const value3 = input3.value
-
     const areaTriangule = areaTriangulo(value1, value2, value3)
-    alert (areaTriangule) 
+    const resultPrice = document.getElementById("resultTriangule");
+    resultPrice.innerText = `El área del trinagulo es: ${areaTriangule.toFixed(3)} cm2`
 }
 
 const calcularDiametroCirculo = () => {
     const input = document.getElementById("InputCirculo")
     const value = input.value
-
     const diametro = diametroCirculo(value)
-    alert (diametro)
+    const resultPrice = document.getElementById("resultCircle");
+    resultPrice.innerText = `El perimetro del circulo es: ${diametro} cm`
 }
 
 const calcularCircunferenciaCirculo = () => {
     const input = document.getElementById("InputCirculo")
     const value = input.value
-
     const circunferencia = circuferenciaCirculo(value)
-    alert(circunferencia)
+    const resultPrice = document.getElementById("resultCircle");
+    resultPrice.innerText = `La circunferencia del circulo es: ${circunferencia.toFixed(3)} cm`
 }
 
 const calcularAreaCirculo = () => {
     const input = document.getElementById("InputCirculo")
     const value = input.value
-
     const area = areaCirculo(value)
-    alert(area)
+    const resultPrice = document.getElementById("resultCircle");
+    resultPrice.innerText = `El area del circulo es: ${area.toFixed(3)} cm2`
 }
